@@ -14,8 +14,8 @@ This article on medium explains the entire the process
 - [Tools and Libraries Used](#Tools-and-Libraries-Used)
 - [Files](#Files)
 - [Result](#Result)
-- [Dataset Description](#Dataset Description)
-  - [Acknowledgements](#Acknowledgements)
+- [Dataset Description](#Dataset-Description)
+- [Acknowledgements](#Acknowledgements)
 
 ## Motivation
 
@@ -90,7 +90,41 @@ After going through with the [original dataset documentation](https://www.scienc
 | **reservation_status_date** | Date at which the last status was set | This variable can be used in conjunction with the ReservationStatus to understand when was the booking canceled or when did the customer checked-out of the hotel | Date |
 
 
-#### Acknowledgements
+## Result
+We learned that:
+From the dataset distribution, I found out that for each attribute:
+1) **hotel** = City hotel is booked more than Resort hotel 
+2) **is_canceled** = Most booking are not cancelled, however cancelled booking are quite a lot too
+3) **lead_time** = Most booking are done near or on the date of arrival and most of them are transient customer
+4) **arrival_date_year** = customer arrived for the booking increased from 2015 until 2016 and slightly decreased on 2017
+5) **arrival_date_month** = customer arrived for the booking are the highest during Summer season, and lowest during Winter season
+6) **arrival_date_week_number** = People arrived for the booking are the highest on week 33 and lowest on week 52
+7) **arrival_date_day_of_month** = Most customer arrived for the booking in the middle of the month
+8) **stays_in_weekend_nights** = Most customer do not stay on weekend nights, but the are some people who would stay for 1-2 days. 
+9) **stays_in_week_nights** = People tend to stay mostly for 2 days during weekdays for City Hotel, while for Resort Hotel, people mostly stay for 1 until 3 days.
+10) **adults** = Most people booking for 2 adults (probably newlyweds, or retirees), or 1 adult (probably single or a traveler)
+11) **children** = Most customer did not bring any child for the hotel booking
+12) **babies** = Most customer did not bring any baby for the hotel booking
+13) **meal** = Most customer booked for BB (Bed & Breakfast) followed by  HB (Half board) and SC (no meal package)
+14) **country** = For City Hotel most people who booked are from Portugal, France, and Germany. Meanwhile for Resort Hotel, Most people who booked are from Portugal, United Kingdom, and Spain.
+15) **market_segment** = Most customer booked using Online Tour Agent, Offline Tour Agent, and Tour Operators. Nowadays, people rarely use complementary market segment for hotel booking
+16) **distribution_channel** = Most customer booked using Tour Agents, and Tour Operators, followed by Direct bookings and Corporate booking
+17) **is_repeated_guest** = Most of the bookings are by non-repeated guests. Less than 5% of them are repeated guests.
+18) **previous_cancellations** = Most customer did not cancel their previous booking prior to the current booking. Less than 3% of them cancelled their bookings prior to the current booking.
+19) **previous_bookings_not_canceled** = Most customer did not cancel their previous booking prior to the current booking. Less than 3% of them cancelled their bookings prior to the current booking.
+20) **reserved_room_type** = Customers mostly in favour for room type A, followed by D and others for both hotels
+21) **assigned_room_type** = In the booking, most customers are assigned for room type A, followed by D and others for both hotels
+22) **booking_changes** = Most booking did not make any booking changes. Only 20% of them does
+23) **deposit_type** = Most people booking for no deposit, while some booking for non-refundable deposit. It is rare for customer to book for refundable deposit.
+24) **agent** = Most customers used Agent ID no 9 for City Hotel booking and Agent ID No 240 for Resort Hotel booking
+25) **company** = Most customers used Company ID no 40 for City Hotel booking and Company ID No 223 for Resort Hotel booking
+26) **days_in_waiting_list** = Most customers who booked are not in waiting list. Less than 5% of them are from waiting list
+27) **customer_type** = Most customers are transient who are usually walk-in guests, last minute or bookers or simply people that require a very short term stay in the hotel
+28) **required_car_parking_spaces** = Most customers did not require parking spaces. Less than 2% requires parking spaces.
+29) **total_special_requests** = Most customers did not have special request. However those who have special request quite a lot too
+30) **reservation_status** = City hotel has more checkout reservation status than Resort hotel. However, City Hotel also has the most cancellation reservation status than Resort hotel. 
+
+## Acknowledgements
 The data is originally from the article Hotel Booking Demand Datasets, written by Nuno Antonio, Ana Almeida, and Luis Nunes for Data in Brief, Volume 22, February 2019.
 
 The data was downloaded and cleaned by Thomas Mock and Antoine Bichat for #TidyTuesday during the week of February 11th, 2020.
