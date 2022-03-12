@@ -91,7 +91,6 @@ After going through with the [original dataset documentation](https://www.scienc
 
 
 ## Result
-We learned that:
 From the dataset distribution, I found out that for each attribute:
 1) **hotel** = City hotel is booked more than Resort hotel 
 2) **is_canceled** = Most booking are not cancelled, however cancelled booking are quite a lot too
@@ -126,5 +125,4 @@ From the dataset distribution, I found out that for each attribute:
 
 ## Acknowledgements
 The data is originally from the article Hotel Booking Demand Datasets, written by Nuno Antonio, Ana Almeida, and Luis Nunes for Data in Brief, Volume 22, February 2019.
-
 The data was downloaded and cleaned by Thomas Mock and Antoine Bichat for #TidyTuesday during the week of February 11th, 2020.
