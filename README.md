@@ -14,7 +14,7 @@ This article on medium explains the entire the process
 - [Tools and Libraries Used](#Tools-and-Libraries-Used)
 - [Files](#Files)
 - [Result](#Result)
-- [Dataset Information](#Dataset-Information)
+- [Dataset Description](#Dataset Description)
   - [Acknowledgements](#Acknowledgements)
 
 ## Motivation
@@ -88,3 +88,9 @@ After going through with the [original dataset documentation](https://www.scienc
 | **total_of_special_requests** | Number of special requests made by the customer (e.g. twin bed or high floor) | - | Integer |
 | **reservation_status** | Reservation last status, assuming one of three categories | Canceled – booking was canceled by the customer <br> Check-Out – customer has checked in but already departed <br> No-Show – customer did not check-in and did inform the hotel of the reason why <br> | Categorical |
 | **reservation_status_date** | Date at which the last status was set | This variable can be used in conjunction with the ReservationStatus to understand when was the booking canceled or when did the customer checked-out of the hotel | Date |
+
+
+#### Acknowledgements
+The data is originally from the article Hotel Booking Demand Datasets, written by Nuno Antonio, Ana Almeida, and Luis Nunes for Data in Brief, Volume 22, February 2019.
+
+The data was downloaded and cleaned by Thomas Mock and Antoine Bichat for #TidyTuesday during the week of February 11th, 2020.
